@@ -54,7 +54,7 @@ namespace ApiSkyrimRP
                     Title = "Skyrim RP Api",
                     Description = "Демонстрационная версия Api. Совместимая с серверами SkyMP",
                     Version = "demo",
-                    License = new() { Name = "" },
+                    License = new() { Name = "Apache 2.0", Url = new("https://www.apache.org/licenses/LICENSE-2.0") },
                     Contact = new() { Name = "Skyrim RP", Url = new("https://discord.gg/fa8qW29UdN") }
                 });
 
