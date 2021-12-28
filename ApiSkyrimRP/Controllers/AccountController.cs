@@ -224,7 +224,7 @@ namespace ApiSkyrimRP.Controllers
             if (!mailService.Enable) return StatusCode(503, new { errorText = "Email Service not available." });
 
             User user = await usersService.GetUserAsync(info.Email);
-            if (user == null || !user.IsEmailConfirmed) return BadRequest(new { errorText = "User not found." });
+            if (user == null || !user.IsEmailConfirmed || !user.IsBlocked) return BadRequest(new { errorText = "User not found." });
 
             Guid code = Guid.NewGuid();
 
