@@ -127,6 +127,11 @@ namespace ApiSkyrimRP.Controllers
                 Claim uid = User.Claims.FirstOrDefault(f => f.Type == "UID");
                 if (int.TryParse(uid.Value, out int id))
                 {
+                    if ((await usersService.GetUserAsync(id)).IsBlocked)
+                    {
+                        jwtAuthManager.RemoveRefreshTokenByUserID(id);
+                        return Unauthorized();
+                    }
                     if (string.IsNullOrWhiteSpace(info.RefreshToken)) return Unauthorized();
 
                     string accessToken = await HttpContext.GetTokenAsync("Bearer", "access_token");
