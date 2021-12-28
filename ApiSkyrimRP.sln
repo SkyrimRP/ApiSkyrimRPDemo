@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiSkyrimRP", "ApiSkyrimRP\ApiSkyrimRP.csproj", "{6B3CD41D-8A25-4B76-AAEB-E3265B639912}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2774C00A-5F12-4F9E-91C7-6B2EB293E44D} = {2774C00A-5F12-4F9E-91C7-6B2EB293E44D}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Entities", "Domain.Entities\Domain.Entities.csproj", "{74213C3B-79D3-4EC5-9232-A2606A142B31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.Enums", "Domain.Enums\Domain.Enums.csproj", "{8A93ED96-A3EA-4398-97E9-67F9746D1B72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{2774C00A-5F12-4F9E-91C7-6B2EB293E44D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{9A1280BD-5BA4-46CF-A2ED-6FD8026C88D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B3CD41D-8A25-4B76-AAEB-E3265B639912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3CD41D-8A25-4B76-AAEB-E3265B639912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3CD41D-8A25-4B76-AAEB-E3265B639912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3CD41D-8A25-4B76-AAEB-E3265B639912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74213C3B-79D3-4EC5-9232-A2606A142B31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74213C3B-79D3-4EC5-9232-A2606A142B31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74213C3B-79D3-4EC5-9232-A2606A142B31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74213C3B-79D3-4EC5-9232-A2606A142B31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A93ED96-A3EA-4398-97E9-67F9746D1B72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A93ED96-A3EA-4398-97E9-67F9746D1B72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A93ED96-A3EA-4398-97E9-67F9746D1B72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A93ED96-A3EA-4398-97E9-67F9746D1B72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2774C00A-5F12-4F9E-91C7-6B2EB293E44D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2774C00A-5F12-4F9E-91C7-6B2EB293E44D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2774C00A-5F12-4F9E-91C7-6B2EB293E44D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2774C00A-5F12-4F9E-91C7-6B2EB293E44D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1280BD-5BA4-46CF-A2ED-6FD8026C88D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1280BD-5BA4-46CF-A2ED-6FD8026C88D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1280BD-5BA4-46CF-A2ED-6FD8026C88D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1280BD-5BA4-46CF-A2ED-6FD8026C88D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A9FA231-5F80-4F75-9831-9E169FD1A235}
+	EndGlobalSection
+EndGlobal
