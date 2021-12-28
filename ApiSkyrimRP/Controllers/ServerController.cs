@@ -71,7 +71,7 @@ namespace ApiSkyrimRP.Controllers
             Player player = await playersService.GetAsync(session);
             if (player == null) return NotFound();
             if (player.Session != session || player.ServerSession != server.Id) return NotFound();
-
+            if (player.User.IsBlocked || player.LastUpdate <= DateTime.Now.AddMinutes(-10)) return NotFound();
             return new JsonResult(new { user = new { id = player.Id } });
         }
 

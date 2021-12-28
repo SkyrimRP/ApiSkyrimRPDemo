@@ -34,7 +34,7 @@ namespace Domain.Services.Players
 
         public Task<Player> GetAsync(int id)
         {
-            return ctx.Players.FirstOrDefaultAsync(f => f.Id == id);
+            return ctx.Players.Include(i => i.User).FirstOrDefaultAsync(f => f.Id == id);
         }
 
         public Task<Player> GetAsync(Guid session)
